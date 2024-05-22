@@ -176,7 +176,7 @@ function App() {
                     <Route
                         path="/login"
                         exact
-                        element={<>{isLoggedIn ? <Navigate to="/" /> : <Login onLogin={handleLogin} />}</>}
+                        element={<>{isLoggedIn ? <Navigate to="/SassifyIn" /> : <Login onLogin={handleLogin} />}</>}
                     />
                     <Route
                         path="/change-password"
