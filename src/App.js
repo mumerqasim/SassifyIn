@@ -169,43 +169,7 @@ function App() {
 
     return (
         <div className="App">
-            {userLoading ? (
-                <Loading />
-            ) : (
-                <Routes>
-                    <Route
-                        path="/SassifyIn"
-                        exact
-                        element={<>{isLoggedIn ? <Navigate to="/SassifyIn" /> : <Login onLogin={handleLogin} />}</>}
-                    />
-                    <Route
-                        path="/change-password"
-                        exact
-                        element={
-                            isLoggedIn ? (
-                                <>
-                                    <Header
-                                        logout={isLoggedIn}
-                                        textBtn={'Home Page'}
-                                        buttonClicked={logoutHandler}
-                                        changepass={isLoggedIn}
-                                        changePassClicked={NavigateHome}
-                                    />
-                                    <ChangePassword logout={logoutHandler} />
-                                </>
-                            ) : (
-                                <Navigate to="/login" />
-                            )
-                        }
-                    />
-                    <Route
-                        path="/"
-                        exact
-                        element={<>{isLoggedIn ? appComponents : <Navigate replace to="/login" />}</>}
-                    />
-                    <Route path="*" element={<Navigate to="/SassifyIn" />} />
-                </Routes>
-            )}
+            {appComponents}
         </div>
     );
 }
