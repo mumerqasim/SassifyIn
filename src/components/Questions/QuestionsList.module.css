@@ -1,0 +1,51 @@
+.QuestionsListDiv {
+    position: relative;
+}
+
+.QuestionsListSection {
+    padding: 2rem 1.75rem;
+    max-height: 30vh;
+    overflow-y: scroll;
+    background-color: #f7f7f7;
+    margin: 2rem 0rem;
+    box-shadow: inset 1px 1px 2rem 0.1px #0000001e;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+}
+
+.QuestionsListSection::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+}
+
+.QuestionsListSection::-webkit-scrollbar-track {
+    background-image: linear-gradient(180deg, #fdfbfb 0%, #fcfcfc 100%);
+    border-radius: 20px;
+}
+
+.QuestionsListSection::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #fdfbfb; /* creates padding around scroll thumb */
+}
+
+.ClearAll {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    z-index: 10000;
+    position: absolute;
+    top: -30px;
+    display: block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50px;
+    border-width: 1px;
+    font-weight: 500;
+    background-color: rgb(63, 58, 58);
+    color: honeydew;
+    cursor: pointer;
+    transition: 0.3s all linear;
+}
+
+.ClearAll:hover {
+    background-color: black;
+}

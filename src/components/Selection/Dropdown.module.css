@@ -1,0 +1,11 @@
+.Select {
+    padding: 2.3%;
+    margin-left: 10%;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 10rem;
+}
+
+.Select option {
+    font-size: 0.9rem;
+}

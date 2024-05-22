@@ -1,0 +1,99 @@
+.QCardContainer {
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+    padding-bottom: 1rem;
+    border: 1px solid grey;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.QCardContainer:hover > .Cross,
+.QCardContainer:hover > .Edit {
+    opacity: 100%;
+}
+
+.Cross:hover > span {
+    transform: rotate(180deg);
+    transform-origin: center center;
+    margin-top: 2px;
+}
+
+.Edit:hover > img {
+    transform: rotate(15deg);
+}
+
+.Edit {
+    position: absolute;
+    left: 96%;
+    bottom: 100%;
+    border: 1px solid grey;
+    background-color: white;
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+.Edit > img {
+    width: 1rem;
+}
+
+.Cross {
+    position: absolute;
+    left: 100%;
+    bottom: 100%;
+    background-color: white;
+    border: 1px solid grey;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+.Cross span {
+    display: block;
+    margin-top: -2px;
+    transition: all linear 0.3s;
+    color: black;
+    font-size: large;
+}
+
+.CardGroup {
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.CardGroup input {
+    display: block;
+    background-color: #ffffff;
+    padding: 0.2rem;
+    border: none;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.CardGroup label {
+    display: block;
+    padding: 0.5rem 0;
+}

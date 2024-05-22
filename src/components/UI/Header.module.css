@@ -1,0 +1,59 @@
+.Header {
+    text-align: center;
+    padding: 0.25rem 1rem;
+    margin-bottom: 1rem;
+    color: rgb(250, 250, 250);
+    display: flex;
+    background-image: linear-gradient(160deg, #29323c 0%, #272c31 100%);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Header > h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Righteous', cursive;
+    flex-basis: 60%;
+    transform: translate(30%);
+}
+
+.ButtonContainer {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.Header button {
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+    min-width: 9rem;
+    margin: 0.5rem;
+    color: #29323c;
+    cursor: pointer;
+    z-index: 10000;
+    background-image: linear-gradient(180deg, #fdfbfb 0%, #ebedee 100%);
+    transition: all 0.2s linear;
+}
+
+.Header button:hover,
+.Header button:active {
+    transform: scale(1.05);
+    color: black;
+}
+
+.Header button:disabled {
+    cursor: not-allowed;
+}
+
+.Header button:disabled:hover {
+    transform: none;
+}
