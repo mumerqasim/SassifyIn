@@ -19,7 +19,7 @@ function App() {
     const [questionsList, updateQuestionsList] = useState([]);
     const [editModeQ, updateEditmodeQ] = useState(null);
     const [editMode, updateEditMode] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
     const [userLoading, setUserLoading] = useState(true);
     const [tokenExpiry, setTokenExpiry] = useState(null);
     const navigate = useNavigate();
@@ -174,7 +174,7 @@ function App() {
             ) : (
                 <Routes>
                     <Route
-                        path="/login"
+                        path="/SassifyIn"
                         exact
                         element={<>{isLoggedIn ? <Navigate to="/SassifyIn" /> : <Login onLogin={handleLogin} />}</>}
                     />
@@ -203,7 +203,7 @@ function App() {
                         exact
                         element={<>{isLoggedIn ? appComponents : <Navigate replace to="/login" />}</>}
                     />
-                    <Route path="*" element={<Navigate to="/login" />} />
+                    <Route path="*" element={<Navigate to="/SassifyIn" />} />
                 </Routes>
             )}
         </div>
