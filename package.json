@@ -1,5 +1,6 @@
 {
   "name": "codes-generator",
+  "homepage": "http://mumerqasim.github.io/SassifyIn",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
