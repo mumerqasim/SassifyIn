@@ -557,16 +557,16 @@ const Output = props => {
             <textarea
                 ref={ref}
                 className={Styles.OutputTextArea}
-                value={finalCode + datacodes + code + codeTemplate.finalCheck + codeTemplate.midprocs + codeTemplate.endProcs}
+                value={finalCode + code + codeTemplate.finalCheck + codeTemplate.midprocs + datacodes + codeTemplate.endProcs}
                 readOnly
             ></textarea>
             <button
                 className={Styles.CopyAllButton}
-                onClick={() => handleCopyString(finalCode + datacodes + code + codeTemplate.finalCheck + codeTemplate.midprocs + codeTemplate.endProcs)}
+                onClick={() => handleCopyString(finalCode + code + codeTemplate.finalCheck + codeTemplate.midprocs + datacodes + codeTemplate.endProcs)}
             >
                 Copy All
             </button>
-            <button className={Styles.CopySomeButton} onClick={() => handleCopyString(datacodes + code + codeTemplate.finalCheck + codeTemplate.midprocs)}>
+            <button className={Styles.CopySomeButton} onClick={() => handleCopyString(code + codeTemplate.finalCheck + codeTemplate.midprocs + datacodes)}>
                 Copy Logic Codes
             </button>
         </div>
